@@ -1,0 +1,89 @@
+{
+  "name": "practice-vue3-front",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@antv/g6": "^4.7.2",
+    "@element-plus/icons-vue": "^2.0.9",
+    "@tinymce/tinymce-vue": "^5.0.0",
+    "@types/qs": "^6.9.7",
+    "axios": "^0.27.2",
+    "clipboard": "^2.0.11",
+    "crypto-js": "^4.1.1",
+    "dayjs": "^1.11.4",
+    "echarts": "^5.3.3",
+    "element-plus": "^2.2.14",
+    "js-base64": "^3.7.2",
+    "js-cookie": "^3.0.1",
+    "lodash-es": "^4.17.21",
+    "normalize.css": "^8.0.1",
+    "nprogress": "^0.2.0",
+    "path-browserify": "^1.0.1",
+    "path-to-regexp": "^6.2.1",
+    "pinia": "^2.0.17",
+    "qs": "^6.11.0",
+    "sortablejs": "^1.15.0",
+    "tinymce": "5.6.2",
+    "unplugin-icons": "^0.14.8",
+    "unplugin-vue-components": "^0.22.7",
+    "v-viewer": "^3.0.10",
+    "video.js": "^7.20.2",
+    "vue": "^3.2.37",
+    "vue-pdf-embed": "^1.1.4",
+    "vue-router": "^4.1.2",
+    "vue3-json-viewer": "^2.2.2"
+  },
+  "devDependencies": {
+    "@iconify-json/el": "^1.1.2",
+    "@iconify-json/ic": "^1.1.8",
+    "@types/highcharts": "^7.0.0",
+    "@types/js-cookie": "^3.0.2",
+    "@types/lodash-es": "^4.17.6",
+    "@types/node": "^18.6.1",
+    "@types/nprogress": "^0.2.0",
+    "@types/path-browserify": "^1.0.0",
+    "@types/sortablejs": "^1.13.0",
+    "@types/tinymce": "^4.6.0",
+    "@types/video.js": "^7.3.46",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "@vitejs/plugin-vue": "^3.0.1",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^11.0.0",
+    "eslint": "^8.20.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.3.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "sass": "^1.54.0",
+    "terser": "^5.14.2",
+    "typescript": "^4.7.4",
+    "unocss": "^0.44.7",
+    "vite": "^3.0.3",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vue-eslint-parser": "^9.0.3",
+    "vue-tsc": "^0.39.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{scss,less,css,html,md}": [
+      "prettier --write"
+    ],
+    "package.json": [
+      "prettier --write"
+    ],
+    "{!(package)*.json,.!(browserslist)*rc}": [
+      "prettier --write--parser json"
+    ]
+  }
+}
